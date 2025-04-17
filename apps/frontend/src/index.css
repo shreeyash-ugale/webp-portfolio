@@ -1,0 +1,112 @@
+/* Reset and base styles optimized for the portfolio */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3b82f6;
+  --primary-dark: #2563eb;
+  --secondary-color: #6366f1;
+  --text-main: #18181b;
+  --text-secondary: #52525b;
+  --bg-light: #f8fafc;
+  --bg-white: #ffffff;
+  --bg-card: #f1f5f9;
+  --border-light: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Hide scrollbar for clean UI */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Extend Tailwind with custom components */
+@layer components {
+  .container {
+    @apply max-w-5xl mx-auto px-4 sm:px-6;
+  }
+  
+  .section {
+    @apply my-10 p-6 sm:p-8 rounded-xl bg-white border border-zinc-100 shadow-sm;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold mb-6 text-zinc-800 border-b pb-3 border-zinc-100;
+  }
+  
+  .card {
+    @apply p-5 rounded-lg bg-zinc-50 border border-zinc-100 shadow-sm mb-4 transition-all duration-200 hover:shadow-md;
+  }
+  
+  .badge {
+    @apply px-3 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-800 border border-blue-200 inline-block mr-2 mb-2 transition-all hover:bg-blue-200;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Skip default styles that came with Vite's React template */

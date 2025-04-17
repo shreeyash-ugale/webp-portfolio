@@ -1,0 +1,158 @@
+/* Portfolio-specific styles */
+
+/* Remove the default Vite styles that don't align with our portfolio design */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Header styles */
+.portfolio-header {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  padding: 3rem 0;
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  animation: slideDown 0.6s ease-out;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  color: white;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.header-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Section styling */
+.portfolio-section {
+  margin: 2.5rem 0;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-section:hover {
+  transform: translateY(-5px);
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #1e293b;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.75rem;
+}
+
+/* Card styling */
+.portfolio-card {
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+/* Skills badges */
+.skill-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: #bae6fd;
+  transform: scale(1.05);
+}
+
+/* Footer styling */
+.portfolio-footer {
+  background-color: #f1f5f9;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .portfolio-header {
+    padding: 2rem 0;
+  }
+  
+  .header-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
