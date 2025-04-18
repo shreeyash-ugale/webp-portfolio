@@ -55,7 +55,7 @@ const resumeData = {
     {
       "title": "Research Intern",
       "company": "SECURSI TECHNOLOGIES (IIT Madras Seed-Funded Startup)",
-      "duration": "Apr. 2024 - Present",
+      "duration": "Apr. 2025 - Present",
       "responsibilities": [
         "Designed and implemented FIDO2 WebAuthn protocol for passwordless authentication using security keys, reducing credential breaches",
         "Developed Full-stack application with React/Shadcn frontend and Express.js backend using Drizzle ORM with PostgreSQL",
