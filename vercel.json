@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build",
   "installCommand": "bun install",
+  "buildCommand": "bun run build",
+  "framework": "vite",
   "outputDirectory": "apps/frontend/dist",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" }

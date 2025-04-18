@@ -14,8 +14,8 @@ A modern web portfolio application built as a monorepo with Turborepo, featuring
 # Install dependencies
 bun install
 
-# Start development server
-bun run dev
+# Start server
+bun run start
 ```
 
 ## Deployment
