@@ -26,7 +26,12 @@ function App() {
     const fetchResumeData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:5000/api/resume');
+        // Use relative URL in production, or the dev server in development
+        const apiUrl = import.meta.env.PROD 
+          ? '/api/resume' 
+          : 'http://localhost:5000/api/resume';
+        
+        const response = await axios.get(apiUrl);
         setResume(response.data);
         setError(null);
       } catch (err) {
