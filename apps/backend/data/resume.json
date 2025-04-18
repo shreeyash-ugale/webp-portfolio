@@ -49,6 +49,16 @@
   ],
   "experience": [
     {
+      "title": "Research Intern",
+      "company": "SECURSI TECHNOLOGIES (IIT Madras Seed-Funded Startup)",
+      "duration": "Apr. 2024 - Present",
+      "responsibilities": [
+        "Designed and implemented FIDO2 WebAuthn protocol for passwordless authentication using security keys, reducing credential breaches",
+        "Developed Full-stack application with React/Shadcn frontend and Express.js backend using Drizzle ORM with PostgreSQL",
+        "Conducted security analysis and performance optimization for authentication flows in production environments"
+      ]
+    },    
+    {
       "title": "Backend Intern",
       "company": "Interact",
       "duration": "Aug. 2024 - Nov. 2024",

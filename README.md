@@ -1,56 +1,36 @@
 # Web Portfolio
 
-A modern web portfolio application built as a monorepo with Turborepo, featuring a React frontend and Node.js backend.
+A modern web portfolio application built as a monorepo with Turborepo, featuring a React frontend and serverless API.
 
-## Project Structure
+## Prerequisites
 
-This project is organized as a monorepo with the following components:
-
-- `apps/frontend`: React application built with Vite and TailwindCSS
-- `apps/backend`: Express API server providing resume data
-- `api/`: Serverless functions for Vercel deployment
-
-## Setup & Development
-
-### Prerequisites
-
-- [Bun](https://bun.sh/) (package manager)
+- [Bun](https://bun.sh/) (preferred package manager)
 - Node.js 18+
+- Vercel account
 
-### Install Dependencies
+## Quick Start
 
 ```bash
+# Install dependencies
 bun install
-```
 
-### Development
-
-Run both frontend and backend in development mode:
-
-```bash
+# Start development server
 bun run dev
 ```
 
-Or run them separately:
+## Deployment
 
-```bash
-# Frontend only
-bun run dev:frontend
+This project is optimized for Vercel deployment:
 
-# Backend only
-bun run dev:api
-```
+1. Install Vercel CLI: `npm i -g vercel`
+2. Login to Vercel: `vercel login`
+3. Deploy: `vercel`
 
+The project uses Vercel serverless functions in the `/api` folder to serve resume data, which replaces the Express backend in production.
 
-### Features
+## Project Structure
 
-- React frontend with TailwindCSS styling
-- API backend for serving resume data
-- Monorepo management with Turborepo
-- Unified Vercel deployment
-
-## CORS Configuration
-
-The API is configured to accept requests from:
-- https://webp-portfolio-frontend.vercel.app
-- http://localhost:5173 (development)
+- `apps/frontend`: React application (Vite + TailwindCSS)
+- `api/`: Serverless functions for Vercel deployment
+- `packages/`: Shared UI components and config
+- `apps/backend`: Backend in Express
