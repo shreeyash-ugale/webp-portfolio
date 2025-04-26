@@ -5,7 +5,7 @@ import path from 'path';
 const resumeData = {
   "name": "Shreeyash Santosh Ugale",
   "contact": {
-    "email": "shreeyash.ugale@example.com",
+    "email": "shreeyash.santosh2023@vitstudent.ac.in",
     "phone": "1234567890",
     "github": "https://github.com/shreeyash-ugale",
     "linkedin": "https://linkedin.com/in/shreeyash-ugale"
