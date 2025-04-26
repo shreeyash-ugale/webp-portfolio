@@ -14,6 +14,7 @@ import ActivitiesPage from './pages/ActivitiesPage';
 import SkillsPage from './pages/SkillsPage';
 import CertificationsPage from './pages/CertificationsPage';
 import AchievementsPage from './pages/AchievementsPage';
+import { Analytics } from "@vercel/analytics/react"
 
 import './App.css';
 
@@ -100,6 +101,7 @@ function App() {
         
         <Footer />
       </div>
+      <Analytics/>
     </BrowserRouter>
   );
 }
