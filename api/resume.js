@@ -5,7 +5,7 @@ import path from 'path';
 const resumeData = {
   "name": "Shreeyash Santosh Ugale",
   "contact": {
-    "email": "shreeyash.santosh2023@vitstudent.ac.in",
+    "email": "work.shreeyashugale@gmail.com",
     "phone": "1234567890",
     "github": "https://github.com/shreeyash-ugale",
     "linkedin": "https://linkedin.com/in/shreeyash-ugale"
@@ -13,109 +13,130 @@ const resumeData = {
   "education": {
     "degree": "B.Tech. Computer Science and Engineering (Internet of Things)",
     "institute": "Vellore Institute of Technology",
-    "cgpa": "8.99",
+    "cgpa": "8.98",
     "duration": "Aug. 2023 - Jul. 2027",
     "location": "Vellore, India"
   },
   "achievements": [
     {
+      "title": "The Protector of Security Badge - HackTheBox",
+      "description": "Awarded 'The Protector of Security' badge and ranking in the top 0.24% on HackTheBox",
+      "date": "Sep 2025"
+    },
+    {
+      "title": "Top 1% Global Ranking - HTB Academy",
+      "description": "Ranked globally Top 1% in HTB Academy, compromised 350+ targets",
+      "date": "Jul 2025"
+    },
+    {
       "title": "#801 Global Ranking on HackTheBox Labs",
-      "description": "Ranked in top 0.05% globally among 1.6M+ cybersecurity practitioners.",
+      "description": "Secured Global Rank #801 on HackTheBox Labs, placing in top 0.05% of 1.6M+ practitioners.",
       "date": "Mar 2025"
     },
     {
-      "title": "HackTheBox Penetration Tester Path: Top 1% in Academy",
-      "description": "Mastered web security, network exploitation and privilege escalation techniques.",
-      "date": "Feb 2025"
-    },
-    {
-      "title": "HackTheBox Prolabs: FullHouse",
-      "description": "Completed enterprise red team simulation across Active Directory, web applications, and multiple segregated network subnets requiring chained lateral movement techniques.",
+      "title": "HackTheBox ProLabs: FullHouse",
+      "description": "Completed HTB ProLabs FullHouse: Red Teaming exercise of Enterprise AD across 3+ subnets.",
       "date": "Feb 2025"
     }
   ],
   "certifications": [
     {
-      "provider": "EC-Council Certifications",
+      "provider": "EC-Council",
       "certificates": [
-        { "name": "Ethical Hacking Essentials (EHE)" },
-        { "name": "Network Defense Essentials (NDE)" },
-        { "name": "Digital Forensics Essentials (DFE)" }
+        { "name": "Certified Ethical Hacker - CEHv13 with AI", "date": "Sept 2025" }
       ]
     },
     {
-      "provider": "Microsoft & LinkedIn Certifications",
+      "provider": "The SecOps Group",
       "certificates": [
-        { "name": "Career Essentials in Cybersecurity" },
-        { "name": "Career Essentials in System Administration" }
+        { "name": "Certified Network Security Practitioner (CNSP)", "date": "Jul 2025" }
+      ]
+    },
+    {
+      "provider": "EC-Council Essentials",
+      "certificates": [
+        { "name": "Ethical Hacking (EHE)", "date": "Oct 2024" },
+        { "name": "Network Defense (NDE)", "date": "Oct 2024" },
+        { "name": "Digital Forensics (DFE)", "date": "Oct 2024" }
+      ]
+    },
+    {
+      "provider": "Microsoft & LinkedIn",
+      "certificates": [
+        { "name": "Cybersecurity", "date": "Jan 2024" },
+        { "name": "Azure System Administration", "date": "Jan 2024" }
       ]
     }
   ],
   "experience": [
     {
-      "title": "Research Intern",
-      "company": "SECURSI TECHNOLOGIES (IIT Madras Seed-Funded Startup)",
-      "duration": "Apr. 2025 - Present",
+      "title": "Security Research Intern",
+      "company": "CyStar Labs, IIT Madras",
+      "duration": "Apr 2025 - Aug 2025",
+      "technologies": "Webauthn/FIDO, PKCS11, Active Directory, ExpressJS, Typescript, Python",
       "responsibilities": [
-        "Designed and implemented FIDO2 WebAuthn protocol for passwordless authentication using security keys, reducing credential breaches",
-        "Developed Full-stack application with React/Shadcn frontend and Express.js backend using Drizzle ORM with PostgreSQL",
-        "Conducted security analysis and performance optimization for authentication flows in production environments"
+        "Led development of a full-stack application with a custom FIDO Key on Shakti Processor for phishing-resistant authentication, reducing credential theft risk by 85%",
+        "Built PDF signing software interfacing with Hardware Security Module (HSM) on Shakti Platform via PKCS#11 protocols, creating signatures verifiable in Adobe Acrobat Reader deployed within IIT Madras",
+        "Created a custom Single Sign-On (SSO) service integrating LDAP (Lightweight directory access protocol) and Credential Management using Webauthn for ease of access across 8+ subdomains",
+        "Configured On-premise Microsoft Active Directory (AD) infrastructure and Azure AD (with Entra ID Join) in Hybrid configuration using VMware as a testing environment, Researched Security Key integration in AD for auth"
       ]
-    },    
+    },
     {
       "title": "Backend Intern",
       "company": "Interact",
-      "duration": "Aug. 2024 - Nov. 2024",
+      "duration": "Aug. 2024 - Sept. 2024",
+      "technologies": "Go, PostgreSQL, Docker, GCP",
       "responsibilities": [
-        "Added logging of histories for communities and organization",
-        "Integrated Google Authentication (OAuth) with oauth2",
-        "Interfaced with Groq AI for code reviews during hackathons"
+        "Engineered logging of histories and comments for communities and organizations into a database using Go routines and constructed CI/CD pipelines on Google Cloud Platform"
       ]
     }
   ],
   "projects": [
     {
-      "title": "IoT Smart Lock System",
-      "technologies": "NodeMCU (ESP8266), Capacitive Keypad (TTP229), RFID (MFRC522)",
-      "date": "Mar. 2025",
+      "title": "Forge",
+      "technologies": "Go, Geth, Docker Compose, Prometheus, Grafana",
+      "date": "Oct. 2025",
       "description": [
-        "Developed a smart door lock system using NodeMCU that allows secure access via physical keypad, RFID cards, and a web interface, featuring password management and master tag authentication",
-        "Designed a space-efficient access control system using a 4×4 capacitive touch keypad with I2C protocol, reducing GPIO utilization by 75% compared to traditional matrix keypads"
+        "Private ethereum PoS blockchain with real-time monitoring",
+        "Orchestrated 3-node PoS Ethereum network along with a Go CLI App that exposes Prometheus/Grafana compatible metrics for real-time monitoring of block height, peer connectivity, and automated peer discovery via JSON-RPC and admin APIs"
       ]
     },
     {
-      "title": "AWS Serverless Mailer",
-      "technologies": "Go, AWS",
+      "title": "Courier",
+      "technologies": "Go, AWS Lambda, S3, Terraform",
       "date": "Jan. 2025",
       "description": [
-        "Collaborated with CSI team to design and manage a serverless email automation system tailored for event communication needs, ensuring efficiency and cost savings.",
-        "Integrated AWS Lambda functions with Golang SDK to process emails in block and streaming modes while leveraging S3 for centralized HTML templates.",
-        "Deployed infrastructure using Terraform to guarantee scalability, reliability, and seamless CI/CD workflows."
+        "Automated mailing service built for organizations",
+        "Architected cost-effective serverless email system with AWS Lambda, Go SDK, S3, and Terraform CI/CD, reducing costs by 90% while handling 1000+ emails/day with 99.9% uptime"
       ]
     }
   ],
   "activities": [
     {
-      "organization": "Computer Society of India-VIT Chapter",
+      "organization": "Computer Society of India – VIT Chapter",
       "position": "Senior Core Member",
       "duration": "Apr. 2024 - Present",
       "location": "Vellore, India",
       "details": [
-        "Developed authentication systems for event platforms using ExpressJS and implemented CI/CD pipelines with GitHub Actions for Gravitas-24 Techfest, ensuring streamlined deployments.",
-        "Architected project management software on DigitalOcean with Docker, integrating Prometheus and Grafana for monitoring and improving organizational efficiency.",
-        "Designed ICMP-based stealth chat application with end-to-end encryption for secure communication while leading and mentoring students at Yantra Hack 2024."
+        "Prototyped an ICMP-based stealth chat application for covert network communication, bypassing traditional firewalls",
+        "Served as panelist at Yantra Hack 2024 and team mentor for junior developers, providing technical guidance and direction",
+        "Setup and self-hosted opensource project management software (Plane) on DigitalOcean leveraging Prometheus and Grafana monitoring capabilities to enhance team collaboration and track performance metrics",
+        "Developed authentication systems and setup CI/CD pipelines with GitHub Actions for Gravitas-24 Techfest"
       ]
     }
   ],
   "skills": {
     "Penetration Testing Tools": [
-      "Nmap", "Metasploit", "Netcat", "Wireshark", "Gobuster", "Burpsuite", "Nikto", "Sqlmap", "Crackmapexec", "Hydra", "Hashcat", "John", "BloodHound", "SharpGPO", "Responder", "Kerbrute", "Evil-WinRM", "Impacket Toolkit", "Mimikatz", "Rubeus", "PEASS-ng", "Ligolo-ng", "Chisel"
+      "Nmap", "Metasploit", "Wireshark", "Burpsuite", "Sqlmap", "Crackmapexec", "Hydra", "Hashcat", "John", "BloodHound", "Responder", "Kerbrute", "Evil-WinRM", "Impacket", "Mimikatz", "Rubeus", "PEASS-ng", "Ligolo-ng", "Chisel"
     ],
-    "Languages & Frameworks": [
-      "Java", "Python", "C/C++", "Golang", "Bash", "JavaScript", "HTML", "ExpressJS", "Gorilla Mux", "Go Fiber", "FastAPI"
+    "Languages": [
+      "Java", "Python", "C/C++", "Golang", "Bash", "JavaScript", "HTML"
+    ],
+    "Frameworks": [
+      "ExpressJS", "Go Fiber", "FastAPI"
     ],
     "Other Technologies": [
-      "Git", "Docker", "Github Actions", "VMware Workstation", "Raspberry Pi 3B+", "Prometheus", "Grafana", "Digital Ocean", "AWS fundamentals"
+      "Git", "Docker", "VMware", "Prometheus", "Grafana", "Intermediate Networking", "Azure", "Digital Ocean", "AWS"
     ]
   }
 };
